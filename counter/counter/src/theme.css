@@ -1,0 +1,144 @@
+Light Theme
+:root {
+    --primary-color: #0077ff;
+    --primary-hover: #005bb5;
+    --secondary-color: #ff4d4d;
+    --secondary-hover: #e63939;
+    --success-color: #00c853;
+    --success-hover: #009624;
+    --danger-color: #d50000;
+    --danger-hover: #9b0000;
+    --text-color: #222;
+    --background-color: #f9f9f9;
+    --button-text-color: white;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --body-bg: radial-gradient(circle, #f9f9f9, #e3f2fd);
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    --primary-color: #1e293b;
+    --primary-hover: #e8e9eb;
+    --secondary-color: #ff7849;
+    --secondary-hover: #e65100;
+    --success-color: #00e676;
+    --success-hover: #00c853;
+    --danger-color: #d50000;
+    --danger-hover: #9b0000;
+    --text-color: #f1f1f1;
+    --background-color: #1e293b;
+    --button-text-color: white;
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
+    --body-bg: radial-gradient(circle, #1e293b, #0f172a);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--body-bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease;
+  }
+  
+  .app-container {
+    background-color: var(--background-color);
+    border: 2px solid red;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px var(--box-shadow-color);
+    text-align: center;
+    max-width: 400px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .title {
+    color: var(--text-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .counter-display {
+    font-size: 72px;
+    font-weight: 700;
+    border: 2px solid black;
+    color: orangered;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0, 119, 255, 0.05);
+    border-radius: 12px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--button-text-color);
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .increment {
+    background-color: green;
+  }
+  
+  .increment:hover {
+    background-color: darkgreen;
+  }
+  
+  .decrement {
+    background-color:blueviolet;
+  }
+  
+  .decrement:hover {
+    background-color: rgb(76, 8, 105);
+  }
+  
+  .reset {
+    background-color: red;
+  }
+  
+  .reset:hover {
+    background-color: darkred;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .theme-button:hover {
+    background-color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
